@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/laptop-computer.png">
+    <title>Laptops</title>
+    <style>
+      body{
+        background-color: #33FFBD;
+        font-family: 'Roboto', sans-serif;
+      }
+      .btn{
+        position: absolute;
+        height: 50px;
+        width: 100px;
+        background-color: #212529;
+        border-radius: 80px;
+        color: white;
+        top: 14%;
+        left: 20%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+      .btn:hover{
+        transform: scale(1.1);
+      }
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          background-color: white;
+          margin: 0 auto;
+          float: none; 
+          margin-top: 70px;
+          margin-bottom: 10px;
+           }
+        .card:hover {
+             box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+             }
+           table{
+             width: 100%;
+           }
+           td{
+             text-align: center;
+             width: 50%;
+           }
+           h3{
+             color: #464a51;
+           }
+           .price{
+             width: 150px;
+             height: 150px;
+             background-color:#212529;
+             border: 5px solid white;
+             border-radius: 80px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             color: cornsilk;
+             position: absolute;
+             top: 3%;
+             left: 72%;
+             transform: rotate(30deg);
+           }
+           .des{
+             padding: 30px;
+           }
+           .card-text{
+            color: #12725f;
+           }
+    </style>
+</head>
+<body>
+   
+    <div class="card" style="width: 800px;" >
+        <a class="btn" href='/products'>Back 👈</a>
+        <img class="card-img-top" src="{%IMG%}" alt="{%PRODUCTNAME%}" width="800px">
+        <div class="card-body">
+          <h2 style="text-align:center;"><b>{%PRODUCTNAME%}</b></h2><hr>
+         <div class="price"><h1>${%PRICE%}</h1></div>
+         <table>
+           <tr>
+             <th><h2>CPU</h2></th>
+             <th><h2>Display</h2></th>
+           </tr>
+           <tr>
+             <td><h3>{%CPU%}</h3></td>
+             <td><h3>{%SCREEN%}</h3></td>
+           </tr>
+
+           <tr>
+            <th><h2>RAM</h2></th>
+            <th><h2>Storage</h2></th>
+          </tr>
+          <tr>
+            <td><h3>{%RAM%}</h3></td>
+            <td><h3>{%STORAGE%}</h3></td>
+          </tr>
+         </table>
+        <div class="des">
+         <h2 style="text-align: center;">Description</h2>
+         <h4 class="card-text">{%DESCRIPTION%}</h4>
+         </div>
+
+        </div>
+      </div>
+</body>
+</html>

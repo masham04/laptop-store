@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png"
+    href="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/laptop-computer.png">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <title>
+
+    THE LAPTOP STORE!</title>
+  <style>
+    body {
+      background-color: #075f68;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 30px;
+
+      font-weight: 900;
+      color: #ffff;
+      text-decoration: underline;
+      text-shadow: 2px 2px 8px #fcfdfd;
+      word-spacing: 10px;
+
+    }
+
+    .container {
+      width: 70rem;
+      margin: 0 auto;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 6rem;
+    }
+
+    .card {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      background-color: white;
+      padding: 10px;
+    }
+
+    .card:hover {
+      box-shadow: 0 24px 32px 0 rgba(26, 23, 23, 0.2);
+    }
+
+    .card-img {
+      width: 100%;
+      display: block;
+    }
+
+    .spec {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .price {
+      width: 50%;
+      height: 70px;
+      background-color: #c1d0df;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(36, 34, 27);
+
+    }
+
+    .link {
+      width: 50%;
+      height: 70px;
+      background-color: #212529;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: cornsilk;
+      line-height: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: inherit;
+      transform: scale(1.1);
+    }
+    .iconify{
+      text-align: center;
+      font-size: 100px;
+    }
+    .footer {
+   
+   padding-top: 10px;
+   padding-bottom: 10px;
+   width: 100%;
+   background-color: rgb(95, 72, 72);
+   color: white;
+   text-align: center;
+}
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    
+    <h2>
+      <span class="iconify" data-icon="akar-icons:laptop-device" data-inline="false"></span>
+      <br/>
+      THE LAPTOP STORE!
+    </h1>
+    <div class="card-container">
+      {%CARDS%}
+
+    </div>
+  </div>
+  <br/>
+  <div class="footer">
+    <h3>&copy; M. Masham</p>
+  </div>
+
+</body>
+
+</html>
